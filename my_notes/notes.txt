@@ -12,7 +12,27 @@ Remove a dependency from package.json: npm uninstall package --save == yarn remo
 Upgrade a package to its latest version: npm update --save == yarn upgrade
 Install a package globally: npm install package -g == yarn global add package
 ----------------------------------------------------------------------------------------------------
+->To Create a React App
+npx create-react-app put_here_your_app's_name
+----------------------------------------------------------------------------------------------------
+React works replace the original DOM with REACT Dom.
+----------------------------------------------------------------------------------------------------
+React project Setup
+----------------------------------------------------------------------------------------------------
+Hooks is a new way to create React components.
+ Classes is the traditional way to create thoose components, 
+----------------------------------------------------------------------------------------------------
+Write Classes that return html as functions does the same.
+	But Classes have more funtionality then functions.
 
+To write a Class , first import  components inside App.js.
+Using a Class is granted access to 'State'
+State is a js object with properties that can be access inside App.
+
+
+
+
+----------------------------------------------------------------------------------------------------
 
 
 
