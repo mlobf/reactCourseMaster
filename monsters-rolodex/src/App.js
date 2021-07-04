@@ -32,22 +32,34 @@ class App extends Component {
     // The super calls the constructor method at Component.
     //  now is possible use 'this.'
     super();
+
     this.state = {
-      string: "Hello Marcos Leme",
+      monsters: [
+        {
+          name: "Frankenstein",
+          id: "asci1",
+        },
+        {
+          name: "Dracula",
+          id: "asci2",
+        },
+        {
+          name: "Zombie",
+          id: "asci3",
+        },
+      ],
     };
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.state.string}</p>
-          <button
-            onClick={() => this.setState({ string: "Hello Borba Filho" })}
-          >
-            Change the text
-          </button>
-        </header>
+        {
+          //map returns the return of the function we pass into it
+          // iterated over every elements in this array.
+          this.state.monsters.map((monster) => (
+            <h1 key={monster.id}>{monster.name}</h1>
+          ))
+        }
       </div>
     );
   }

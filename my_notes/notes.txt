@@ -28,11 +28,12 @@ Write Classes that return html as functions does the same.
 To write a Class , first import  components inside App.js.
 Using a Class is granted access to 'State'
 State is a js object with properties that can be access inside App.
-
-
-
-
 ----------------------------------------------------------------------------------------------------
+Jsx
+	using { } to insert js expressions
+	
+----------------------------------------------------------------------------------------------------
+
 
 
 
