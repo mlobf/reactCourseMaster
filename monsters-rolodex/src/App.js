@@ -1,6 +1,5 @@
 // The imports goes here.
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 // Just a functions that returns a html.
@@ -34,21 +33,14 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [
-        {
-          name: "Frankenstein",
-          id: "asci1",
-        },
-        {
-          name: "Dracula",
-          id: "asci2",
-        },
-        {
-          name: "Zombie",
-          id: "asci3",
-        },
-      ],
+      monsters: [],
     };
+  }
+
+  componentDidMount() {
+    fetch("http://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((users) => this.setState({ monsters: users }));
   }
   render() {
     return (

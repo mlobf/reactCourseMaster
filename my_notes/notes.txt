@@ -31,6 +31,10 @@ State is a js object with properties that can be access inside App.
 ----------------------------------------------------------------------------------------------------
 Jsx
 	using { } to insert js expressions
+----------------------------------------------------------------------------------------------------
+Fetch the content,
+	LifeCycleMethods,
+		-> Methods that are called at different stages of when this component gets rendered.
 	
 ----------------------------------------------------------------------------------------------------
 
