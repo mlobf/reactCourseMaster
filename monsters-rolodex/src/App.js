@@ -35,7 +35,7 @@ class App extends Component {
     this.state = {
       monsters: [],
     };
-  }
+ }
 
   componentDidMount() {
     fetch("http://jsonplaceholder.typicode.com/users")
@@ -47,9 +47,16 @@ class App extends Component {
       <div className="App">
         {
           //map returns the return of the function we pass into it
+          //{id, name, username, email, address, phone, website, company}
           // iterated over every elements in this array.
           this.state.monsters.map((monster) => (
-            <h1 key={monster.id}>{monster.name}</h1>
+            <h1 key={monster.id}>
+              {monster.name}
+              {monster.website}
+              {monster.email}
+              {monster.username}
+            </h1>
+            //<h1 key={monster.id}>{monster.website}</h1>
           ))
         }
       </div>
